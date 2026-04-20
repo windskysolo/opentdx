@@ -35,13 +35,13 @@ def exchange_board_code(board_symbol):
     elif board_symbol.startswith("000"):
         # 000686 => 31686
         board_code = 31000 + int(board_symbol)
-    elif board_symbol.startswith("399"):
+    elif board_symbol.startswith("399") and len(board_symbol) == 6:
         # 399372 => 30399
         board_code = int(board_symbol) - 399000 + 30000
-    elif board_symbol.startswith("899"):
+    elif board_symbol.startswith("899") and len(board_symbol) == 6:
         # 899050 => 32050
         board_code = int(board_symbol) - 899000 + 32000
-    elif board_symbol.startswith("88"):
+    elif board_symbol.startswith("88") and len(board_symbol) == 6:
         # 880686 => 20686
         board_code = int(board_symbol) - 880000 + 20000
     else:

@@ -203,6 +203,19 @@ class CATEGORY(Enum):
     BJ = 12     # 北证A
     CYB = 14    # 创业板
 
+    BOARD_ALL = 10000           #全部板块 559个
+    BOARD_HY = 10001            #127 通达信普通行业一级分类
+    BOARD_HY2 = 10002           #344 通达信普通行业二级分类
+    BOARD_GN = 10004            #269
+    BOARD_FG = 10005            #158
+    BOARD_DQ = 10006            #32
+    BOARD_OTHER = 10007         #其他 397个
+    
+    BOARD_YJ_LEVEL1 = 10008     #研究板一级分类 30个
+    BOARD_YJ_LEVEL2 = 10009     #研究板二级分类 127个
+    BOARD_YJ_LEVEL3 = 10010     #研究板三级分类 344个
+
+    
     HGT = 0x2af9    #沪股通
     SGT = 0x2b01    #深股通
     FXJS = 0x2aff   #风险警示
@@ -452,9 +465,9 @@ class BOARD_TYPE(Enum):
     DQ = 5              #32
     OTHER = 6           #其他 397个
     
-    TDX_YJ_LEVEL1 = 7     #研究板一级分类 30个
-    TDX_YJ_LEVEL2 = 8     #研究板二级分类 127个
-    TDX_YJ_LEVEL3 = 9     #研究板三级分类 344个
+    YJ_LEVEL1 = 7     #研究板一级分类 30个
+    YJ_LEVEL2 = 8     #研究板二级分类 127个
+    YJ_LEVEL3 = 9     #研究板三级分类 344个
     ALL = 255       #全部板块 559个
 
 class EX_BOARD_TYPE(Enum):
